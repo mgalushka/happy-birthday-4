@@ -22,7 +22,7 @@ void setup(){
 }
 
 void loop(){
-  int currentButtonValue = digitalRead(buttonPin);  // read input value
+  int currentButtonValue = digitalRead(inPin);  // read input value
   if(currentButtonValue != buttonValue){
     // new value
     if (buttonValue == HIGH) {  
@@ -30,12 +30,11 @@ void loop(){
       animation = !animation;
     }
   }
-
+  
   if(animation){
-
+    
   }
 }
-
 
 
 
